@@ -7,25 +7,17 @@
 //
 
 #import "ViewController.h"
+#import "UIResponder+FirstResponder.h"
 
 @interface ViewController ()
-@property (nonatomic) UIView *inputAccessoryView;
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-	[super viewDidLoad];
+- (void)viewDidAppear:(BOOL)animated {
+	[super viewDidAppear:animated];
 
-	[UIView performWithoutAnimation:^{
-		self.inputAccessoryView = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 320.f, 44.0f)];
-		self.inputAccessoryView.backgroundColor = [[UIColor redColor] colorWithAlphaComponent:0.5f];
-		[self reloadInputViews];
-	}];
-}
-
-- (BOOL)canBecomeFirstResponder {
-	return YES;
+	NSLog(@"%@:%@ %@", self, NSStringFromSelector(_cmd), [UIResponder currentFirstResponder]);
 }
 
 @end

@@ -86,10 +86,10 @@
             </objects>
             <point key="canvasLocation" x="398" y="600"/>
         </scene>
-        <!--Table View Controller-->
+        <!--View Controller-->
         <scene sceneID="kK9-Lg-amh">
             <objects>
-                <tableViewController id="y7t-QS-paj" sceneMemberID="viewController">
+                <tableViewController id="y7t-QS-paj" customClass="ViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="interactive" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="SE2-MX-b7D" customClass="DebugTableView">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

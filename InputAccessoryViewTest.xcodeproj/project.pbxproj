@@ -16,6 +16,7 @@
 		240F0AC51A7A714F0046C392 /* DebugTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 240F0AC41A7A714F0046C392 /* DebugTableView.m */; };
 		240F0ACF1A7A75C60046C392 /* DCTMessageBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240F0ACC1A7A75B90046C392 /* DCTMessageBar.framework */; };
 		240F0AD01A7A75C60046C392 /* DCTMessageBar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 240F0ACC1A7A75B90046C392 /* DCTMessageBar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		240F0ADF1A7A7F8F0046C392 /* UIResponder+FirstResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 240F0ADE1A7A7F8F0046C392 /* UIResponder+FirstResponder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,8 @@
 		240F0AC31A7A714F0046C392 /* DebugTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugTableView.h; sourceTree = "<group>"; };
 		240F0AC41A7A714F0046C392 /* DebugTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebugTableView.m; sourceTree = "<group>"; };
 		240F0AC61A7A75B90046C392 /* DCTMessageBar.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DCTMessageBar.xcodeproj; path = DCTMessageBar/DCTMessageBar.xcodeproj; sourceTree = "<group>"; };
+		240F0ADD1A7A7F8F0046C392 /* UIResponder+FirstResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+FirstResponder.h"; sourceTree = "<group>"; };
+		240F0ADE1A7A7F8F0046C392 /* UIResponder+FirstResponder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+FirstResponder.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,8 @@
 				240F0A971A7A6A520046C392 /* AppDelegate.m */,
 				240F0A991A7A6A520046C392 /* ViewController.h */,
 				240F0A9A1A7A6A520046C392 /* ViewController.m */,
+				240F0ADD1A7A7F8F0046C392 /* UIResponder+FirstResponder.h */,
+				240F0ADE1A7A7F8F0046C392 /* UIResponder+FirstResponder.m */,
 				240F0A9C1A7A6A520046C392 /* Main.storyboard */,
 				240F0A9F1A7A6A520046C392 /* Images.xcassets */,
 				240F0AA11A7A6A520046C392 /* LaunchScreen.xib */,
@@ -231,6 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				240F0ADF1A7A7F8F0046C392 /* UIResponder+FirstResponder.m in Sources */,
 				240F0A9B1A7A6A520046C392 /* ViewController.m in Sources */,
 				240F0AC51A7A714F0046C392 /* DebugTableView.m in Sources */,
 				240F0A981A7A6A520046C392 /* AppDelegate.m in Sources */,
