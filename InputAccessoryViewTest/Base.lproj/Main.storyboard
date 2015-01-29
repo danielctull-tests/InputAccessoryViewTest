@@ -18,7 +18,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PTC-wO-bjm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1220" y="382"/>
+            <point key="canvasLocation" x="-1220" y="600"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Lcf-Et-YfO">
@@ -52,12 +52,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5tM-PS-xGc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-543" y="394"/>
+            <point key="canvasLocation" x="-469" y="600"/>
         </scene>
-        <!--View Controller-->
+        <!--Message Bar Controller-->
         <scene sceneID="PNe-XD-c2q">
             <objects>
-                <viewController id="61J-7e-bd6" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="61J-7e-bd6" customClass="DCTMessageBarController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="522-fa-QdD"/>
                         <viewControllerLayoutGuide type="bottom" id="grc-Yk-PIj"/>
@@ -90,7 +90,7 @@
         <scene sceneID="kK9-Lg-amh">
             <objects>
                 <tableViewController id="y7t-QS-paj" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="SE2-MX-b7D" customClass="DebugTableView">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="interactive" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="SE2-MX-b7D" customClass="DebugTableView">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -192,7 +192,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TmV-CE-Dyg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1199" y="612"/>
+            <point key="canvasLocation" x="1197" y="600"/>
         </scene>
     </scenes>
 </document>

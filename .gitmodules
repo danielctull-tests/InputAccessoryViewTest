@@ -1,0 +1,3 @@
+[submodule "DCTMessageBar"]
+	path = DCTMessageBar
+	url = git://github.com/danielctull/DCTMessageBar.git

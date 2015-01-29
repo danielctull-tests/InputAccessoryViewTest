@@ -14,7 +14,47 @@
 		240F0AA01A7A6A520046C392 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 240F0A9F1A7A6A520046C392 /* Images.xcassets */; };
 		240F0AA31A7A6A520046C392 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 240F0AA11A7A6A520046C392 /* LaunchScreen.xib */; };
 		240F0AC51A7A714F0046C392 /* DebugTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 240F0AC41A7A714F0046C392 /* DebugTableView.m */; };
+		240F0ACF1A7A75C60046C392 /* DCTMessageBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240F0ACC1A7A75B90046C392 /* DCTMessageBar.framework */; };
+		240F0AD01A7A75C60046C392 /* DCTMessageBar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 240F0ACC1A7A75B90046C392 /* DCTMessageBar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		240F0ACB1A7A75B90046C392 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 240F0AC61A7A75B90046C392 /* DCTMessageBar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 24D55DDE19D80AB3005E2016;
+			remoteInfo = DCTMessageBar;
+		};
+		240F0ACD1A7A75B90046C392 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 240F0AC61A7A75B90046C392 /* DCTMessageBar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 24C949D919C4289200BF16D8;
+			remoteInfo = "DCTMessageBar Demo";
+		};
+		240F0AD11A7A75C60046C392 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 240F0AC61A7A75B90046C392 /* DCTMessageBar.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 24D55DDD19D80AB3005E2016;
+			remoteInfo = DCTMessageBar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		240F0AD31A7A75C60046C392 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				240F0AD01A7A75C60046C392 /* DCTMessageBar.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		240F0A8F1A7A6A520046C392 /* InputAccessoryViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InputAccessoryViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +69,7 @@
 		240F0AA21A7A6A520046C392 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		240F0AC31A7A714F0046C392 /* DebugTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugTableView.h; sourceTree = "<group>"; };
 		240F0AC41A7A714F0046C392 /* DebugTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebugTableView.m; sourceTree = "<group>"; };
+		240F0AC61A7A75B90046C392 /* DCTMessageBar.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DCTMessageBar.xcodeproj; path = DCTMessageBar/DCTMessageBar.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				240F0ACF1A7A75C60046C392 /* DCTMessageBar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +89,7 @@
 			children = (
 				240F0A911A7A6A520046C392 /* InputAccessoryViewTest */,
 				240F0A901A7A6A520046C392 /* Products */,
+				240F0AC61A7A75B90046C392 /* DCTMessageBar.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +127,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		240F0AC71A7A75B90046C392 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				240F0ACC1A7A75B90046C392 /* DCTMessageBar.framework */,
+				240F0ACE1A7A75B90046C392 /* DCTMessageBar Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -94,10 +146,12 @@
 				240F0A8B1A7A6A520046C392 /* Sources */,
 				240F0A8C1A7A6A520046C392 /* Frameworks */,
 				240F0A8D1A7A6A520046C392 /* Resources */,
+				240F0AD31A7A75C60046C392 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				240F0AD21A7A75C60046C392 /* PBXTargetDependency */,
 			);
 			name = InputAccessoryViewTest;
 			productName = InputAccessoryViewTest;
@@ -129,12 +183,35 @@
 			mainGroup = 240F0A861A7A6A520046C392;
 			productRefGroup = 240F0A901A7A6A520046C392 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 240F0AC71A7A75B90046C392 /* Products */;
+					ProjectRef = 240F0AC61A7A75B90046C392 /* DCTMessageBar.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				240F0A8E1A7A6A520046C392 /* InputAccessoryViewTest */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		240F0ACC1A7A75B90046C392 /* DCTMessageBar.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DCTMessageBar.framework;
+			remoteRef = 240F0ACB1A7A75B90046C392 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		240F0ACE1A7A75B90046C392 /* DCTMessageBar Demo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "DCTMessageBar Demo.app";
+			remoteRef = 240F0ACD1A7A75B90046C392 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		240F0A8D1A7A6A520046C392 /* Resources */ = {
@@ -162,6 +239,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		240F0AD21A7A75C60046C392 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DCTMessageBar;
+			targetProxy = 240F0AD11A7A75C60046C392 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		240F0A9C1A7A6A520046C392 /* Main.storyboard */ = {
